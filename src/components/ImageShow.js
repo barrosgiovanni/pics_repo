@@ -2,7 +2,9 @@ import React from "react";
 
 function ImageShow() {
   return (
-    <h1>image show</h1>
+    <div className="image">
+      <h1>image show</h1>
+    </div>
   )
 }
 

@@ -3,8 +3,27 @@ import ImageShow from "./ImageShow";
 
 function ImageList() {
   return (
-    <div>
-    
+    <div className="image-list">
+      <ImageShow />
+      <ImageShow />
+      <ImageShow />
+      <ImageShow />
+      <ImageShow />
+      <ImageShow />
+      <ImageShow />
+      <ImageShow />
+      <ImageShow />
+      <ImageShow />
+      <ImageShow />
+      <ImageShow />
+      <ImageShow />
+      <ImageShow />
+      <ImageShow />
+      <ImageShow />
+      <ImageShow />
+      <ImageShow />
+      <ImageShow />
+      <ImageShow />
     </div>
   )
 }

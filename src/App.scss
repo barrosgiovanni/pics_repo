@@ -1,14 +1,36 @@
+* {
+  border: 1px solid red;
+}
+
 .search-field {
   display: flex;
   margin: 60px;
-}
 
-.search-icon {
+  .search-icon {
   display: inline-block;
   margin-right: 20px;
+  }
+
+  form {
+    width: 100%;
+
+    .search-input {
+      display: inline-block;
+      font-size: 3.2rem;
+      padding: 0;
+      width: 100%;
+    }
+  }
 }
 
-.search-input {
-  display: inline-block;
-  font-size: 3rem;
+.image-list {
+  column-count: 5;
+  column-gap: 8px;
+  padding: 8px;
+
+  .image {
+    width: 100%;
+    margin: 4px;
+    cursor: pointer;
+  }
 }

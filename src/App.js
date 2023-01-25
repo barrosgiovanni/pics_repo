@@ -6,9 +6,13 @@ import ImageList from "./components/ImageList";
 
 function App() {
 
+  const handleSubmit = (term) => {
+    console.log('search', term)
+  }
+
   return (
     <div>
-      <SearchBar />
+      <SearchBar onSubmit={handleSubmit} />
       <ImageList />
     </div>
   )
@@ -16,10 +20,3 @@ function App() {
 }
 
 export default App;
-
-
-
-
-
-// https://api.unsplash.com/search/photos?query=office
-// Authorization: Client-ID RdL5dIP3c1facGDK7CZwPeCq2GMeGTOuKTRBZPfXnnc
