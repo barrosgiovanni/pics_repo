@@ -1,19 +1,26 @@
 import React from "react";
-// import Axios from "axios";
+import { useState } from "react";
 import SearchBar from "./components/SearchBar";
 import ImageList from "./components/ImageList";
+import searchImages from "./api";
 // import ImageShow from "./components/ImageShow";
 
 function App() {
 
-  const handleSubmit = (term) => {
-    console.log('search', term)
+
+  const [images, setImages] = useState([]);
+
+  const handleSubmit = async (term) => {
+    const result = await searchImages(term);
+
+    setImages(result);
+
   }
 
   return (
     <div>
       <SearchBar onSubmit={handleSubmit} />
-      <ImageList />
+      <ImageList images={images} />
     </div>
   )
 
